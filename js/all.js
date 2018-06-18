@@ -72,7 +72,7 @@ function createAreaSelect() {
     var areaOptions = '';
     for (var i = 0; i < areaData.length; i++) {
         var areaName = areaData[i].District;
-        var areaCode = areaData[i].areacode;
+        var areaCode = areaData[i].zipcode;
         areaOptions += '<option value="' + areaCode + '">' + areaName + '</option> ';
     }
     document.querySelector('.content__select').innerHTML = areaOptions;
